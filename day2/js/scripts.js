@@ -31,7 +31,6 @@ function arrayOfStrings () {
 }
 
 function result () {
-
     var results = document.getElementById('results');
     var p = document.createElement("p");
     document.body.appendChild(p);
