@@ -27,30 +27,25 @@ function result () {
             if (input1.length > input2.length) {
                 return input1;
             }
-
             return input2;
         }
         else if (isNaN(input1) && !isNaN(input2)) {
             if (input1.length > parseInt(input2)) {
                 return input1;
             }
-            else {
                 return input2;
-            }
         }
         else if (!isNaN(input1) && isNaN(input2)) {
             if (parseInt(input1) > input2.length) {
                 return input1;
             }
-            else return input2;
+            return input2;
         }
         else if (!isNaN(input1) && !isNaN(input2)) {
             if (parseInt(input1) > parseInt(input2)) {
                 return input1;
             }
-            else {
                 return input2;
-            }
         }
         else {
             return input2;
