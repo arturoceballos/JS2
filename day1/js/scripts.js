@@ -9,7 +9,9 @@ function element(elementType, text) {
 function result () {
     //Find input values
     var input1 = document.getElementById('input1').value;
+    console.log(input1);
     var input2 = document.getElementById('input2').value;
+    console.log(input2);
 
     function largest () {
         //Check if input values = 2 strings. If so, return largest string
@@ -47,6 +49,13 @@ function result () {
     }
 
     //Create the element to display the answer in the results div using the element function created above.
+    function element(elementType, text) {
+        var newElement = document.createElement(elementType);
+        newElement.textContent = text;
+
+        return newElement;
+    }
+
     var results = document.getElementById('results');
     results.appendChild(element("p", largest()));
 
