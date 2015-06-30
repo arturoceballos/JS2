@@ -42,6 +42,7 @@ function arrayOfStrings () {
     //console.log(largestStringName);
     //console.log(largestNumber);
     //console.log(newNum);
+    console.log(Object.keys(newArr));
 
     if (largestString > largestNumber) {
         //console.log(largestStringName);
