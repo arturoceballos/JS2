@@ -33,3 +33,30 @@ function list() {
 }
 
 list();
+
+// Create a constructor function so that we can add new contacts dynamically
+function Person(firstName, lastName, phoneNumber, email) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.phoneNumber = phoneNumber;
+    this.email = email;
+    //Could add update functions vvv
+    this.updateFirst = function (updatedFirst) {
+        this.firstName = updatedFirst;
+    };
+    this.updateLast = function (updatedLast) {
+        this.lastName = updatedLast;
+    };
+    this.updatePhone = function (updatedPhone) {
+        this.phoneNumber = updatedPhone;
+    };
+    this.updateEmail = function (updatedEmail) {
+        this.email = updatedEmail;
+    }
+}
+
+// Create new instance of Person
+var arturo = new Person("Arturo", "Ceballos", "(559) 555-5555", "aceballos118@gmail.com");
+
+//Update contact
+arturo.updateEmail("(559) 974-8487");

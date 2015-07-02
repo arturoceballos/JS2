@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05fcbe50-8d90-4606-863f-b5c063128332" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/dom2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day2/assignment2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/objects/address-book/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classwork/dom2/js/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day2/assignment2/js/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/objects/address-book/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classwork/index.html" afterPath="$PROJECT_DIR$/classwork/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classwork/js/scripts.js" afterPath="$PROJECT_DIR$/classwork/js/scripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/objects/address-book/js/scripts.js" afterPath="$PROJECT_DIR$/objects/address-book/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JS2.iws" />
@@ -48,8 +41,8 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/objects/address-book/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21652421" vertical-offset="298" max-vertical-offset="1000">
-              <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.64387465" vertical-offset="823" max-vertical-offset="1675">
+              <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -501,7 +494,7 @@
       <workItem from="1435711571060" duration="6520000" />
       <workItem from="1435769200611" duration="22000" />
       <workItem from="1435783250097" duration="116000" />
-      <workItem from="1435856881266" duration="858000" />
+      <workItem from="1435856881266" duration="1666000" />
     </task>
     <task id="LOCAL-00001" summary="removed commented code">
       <created>1434834094751</created>
@@ -545,11 +538,17 @@
       <option name="project" value="LOCAL" />
       <updated>1435688407024</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added objects directory with address book example js and html">
+      <created>1435859053323</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1435859053323</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52743000" />
+    <option name="totallyTimeSpent" value="53551000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -569,6 +568,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -580,7 +580,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -606,7 +605,8 @@
     <MESSAGE value="Added pseudo code so class can understand every individual piece of code" />
     <MESSAGE value="dom manipulation script w/html. modified day1 JS. removed inline style. modified assignments script. Created JS to talk about scope. Completed day 2 assignment. removed inline style. Added .idea file to gitignore" />
     <MESSAGE value="display array indexes. Created day 3 assignment." />
-    <option name="LAST_COMMIT_MESSAGE" value="display array indexes. Created day 3 assignment." />
+    <MESSAGE value="Added objects directory with address book example js and html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added objects directory with address book example js and html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -945,6 +945,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24928775" vertical-offset="0" max-vertical-offset="702">
           <caret line="7" column="81" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="81" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -974,8 +975,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/objects/address-book/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21652421" vertical-offset="298" max-vertical-offset="1000">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.64387465" vertical-offset="823" max-vertical-offset="1675">
+          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
           <folding />
         </state>
       </provider>
