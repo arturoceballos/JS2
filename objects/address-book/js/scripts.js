@@ -10,16 +10,20 @@ var mary = {
     firstName: "Mary",
     lastName: "Johnson",
     phoneNumber: "(650) 888-8888",
-    email: "mary.johnson@example.com"
+    email: "mary.johnson@example.com",
+    updateFirst: function(newName) {
+        this.firstName = newName;
+    }
 };
 
 //Store that contact or contacts in a contacts array
-var contacts = [bob, mary];
+debugger;
+//var contacts = [bob, mary];
 
 // Create function to display a contacts full name
 function printPerson (person) {
     console.log(person.firstName + " " + person.lastName);
-};
+}
 
 printPerson(contacts[0]);
 printPerson(contacts[1]);
@@ -27,14 +31,26 @@ printPerson(contacts[1]);
 // Create function to list all contacts
 function list() {
     var contactsLength = contacts.length;
-    for (i = 0; i < contactsLength; i++){
+    for (var i = 0; i < contactsLength; i++){
         printPerson(contacts[i]);
-    };
+    }
 }
 
 list();
 
-// Create a constructor function so that we can add new contacts dynamically
+// Create search function
+function search(lastName) {
+    var contactsLength = contacts.length;
+    for (var i = 0; i < contactsLength; i++) {
+        if (contacts[i].lastName == lastName) {
+            printPerson(contacts[i]);
+        }
+    }
+}
+
+search("Jones");
+
+// Create a constructor object so that we can add new contacts dynamically
 function Person(firstName, lastName, phoneNumber, email) {
     this.firstName = firstName;
     this.lastName = lastName;
@@ -58,5 +74,13 @@ function Person(firstName, lastName, phoneNumber, email) {
 // Create new instance of Person
 var arturo = new Person("Arturo", "Ceballos", "(559) 555-5555", "aceballos118@gmail.com");
 
-//Update contact
+//Update contact info
 arturo.updateEmail("(559) 974-8487");
+
+//Create empty array to push new contacts into
+var contacts = [];
+//Create function that creates new instance of Person object
+function addPerson () {
+    new Person(inputFirst, inputLast, inputPhone, inputEmail);
+
+}

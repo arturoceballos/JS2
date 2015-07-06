@@ -6,6 +6,37 @@
 </head>
 <body>
 
-<script src="js/scripts.js"></script>
+<h1>Phone Book</h1>
+
+<h2>Create a Contact</h2>
+<form>
+    First name:<br>
+    <input type="text" placeholder="First Name" id="inputFirst">
+    <br>
+    Last name:<br>
+    <input type="text" placeholder="Last Name" id="inputLast">
+    <br>
+    Phone Number:<br>
+    <input type="text" placeholder="Phone Number" id="inputPhone">
+    <br>
+    Email:<br>
+    <input type="text" placeholder="Email" id="inputEmail">
+</form>
+
+<button onclick="saveContact()">Create New Contact</button>
+<button onclick="displayContacts()">Show All Contacts</button>
+
+<div id="contacts"></div>
+
+<form>
+    Search:<br>
+    <input type="text" id="search"/>
+</form>
+<button onclick="search()">Search Contacts</button>
+
+<div id="contactsSearch"></div>
+
+<!--<script src="js/scripts.js"></script>-->
+<script src="js/phonebook.js"></script>
 </body>
 </html>
