@@ -33,7 +33,6 @@ function Contact(firstName, lastName, phoneNumber, email) {
 
 //Create function that creates new instance of Person object
 function saveContact() {
-    debugger;
     //Get values of the input boxes
     var firstName = document.getElementById('inputFirst').value;
     //console.log(firstName);
