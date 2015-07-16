@@ -35,22 +35,31 @@
         </ul>
     </section>
 
-    <section class="tab" ng-controller="TabController as tab">
+<!--Step 6: Create TabController and pull into html using directive-->
+    <section class="tab">
         <ul class="nav nav-pills">
-            <li ng-class="{ active: tab.isSet(1)}">
-                <a href ng-click="tab.setTab(1)">Description</a></li>
-            <li ng-class="{ active: tab.isSet(2)}">
-                <a href ng-click="tab.setTab(2)">Specs</a></li>
-            <li ng-class="{ active: tab.isSet(3)}">
-                <a href ng-click="tab.setTab(3)">Reviews</a></li>
+            <!--Step 8: Use directive that'll set the list item's class to active and then use an expression that'll access the-->
+            <!--isSet method in your TabController to set the tab to it's current value. Do this for each li-->
+            <li>
+                <!--Step 7: Use a directive that'll set the tab to it's current state (tab you clicked on) by accessing the -->
+                <!--setTab method you created in your TabController. Do this for each link-->
+                <a href>Description</a></li>
+            <li>
+                <a href>Specs</a></li>
+            <li>
+                <a href>Reviews</a></li>
         </ul>
-        <div ng-show="tab.isSet(1)">
+        <!--Step 10: Use a directive that'll show the div which directly relates to the tab you selected. This will be-->
+        <!--similar to the way you set the active tab to active-->
+        <div>
             <h4>Description</h4>
-            <blockquote>{{product.description}}</blockquote>
+            <!--Step 9: Use an expression to get the products description and put it in the Description div. Do the same-->
+            <!--for each div that follows-->
+            <blockquote></blockquote>
         </div>
         <div ng-show="tab.isSet(2)">
             <h4>Specs</h4>
-            <blockquote>Shine: {{product.shine}}</blockquote>
+            <blockquote></blockquote>
         </div>
         <div ng-show="tab.isSet(3)">
             <h4>Reviews</h4>
