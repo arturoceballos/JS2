@@ -7,16 +7,28 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 </head>
+
+<!--step 1: Create store module-->
+
+<!--step 2: Create StoreController and pull it into your html using a directive-->
 <body class="list-group" ng-controller="StoreController as store">
 <header>
     <h1 class="text-center">Gem Store</h1>
     <h2 class="text-center">Using Angular</h2>
 </header>
+
+<!--step 3: Loop over our products (the gems)-->
 <div class="list-group-item" ng-repeat="product in store.products">
     <h3>
+        <!--step 4: Use an expression to insert the product name-->
         {{product.name}}
+
+        <!--step 5: Use an expression to insert the product price-->
+        <!--Bonus: Use pipe filter to convert our price into a currency format-->
         <em class="pull-right">{{product.price | currency}}</em>
     </h3>
+
+
     <section ng-show="product.images.length" ng-controller="GalleryController as gallery">
         <img ng-src="{{product.images[gallery.current]}}" />
         <ul class="list-inline thumbs">

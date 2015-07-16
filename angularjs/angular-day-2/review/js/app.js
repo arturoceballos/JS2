@@ -1,3 +1,5 @@
+//step 1: Create your app module
+
 (function() {
     var app = angular.module('gemStore', []);
 

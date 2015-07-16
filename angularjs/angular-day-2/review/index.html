@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="gemStore">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+
+<!--step 1: Create store module in your app.js-->
+
+<!--step 2: Create StoreController and pull it into your html using a directive-->
+<body class="list-group">
+<header>
+    <h1 class="text-center">Gem Store</h1>
+    <h2 class="text-center">Using Angular</h2>
+</header>
+
+<!--step 3: Loop over our products (the gems)-->
+<div class="list-group-item">
+    <h3>
+        <!--step 4: Use an expression to insert the product name-->
+
+        <!--step 5: Use an expression to insert the product price-->
+        <!--Bonus: Use pipe filter to convert our price into a currency format-->
+        <em class="pull-right"></em>
+    </h3>
+    <section ng-show="product.images.length" ng-controller="GalleryController as gallery">
+        <img ng-src="{{product.images[gallery.current]}}" />
+        <ul class="list-inline thumbs">
+            <li class="thumbnail" ng-repeat="image in product.images">
+                <img ng-src="{{image}}" />
+            </li>
+        </ul>
+    </section>
+
+    <section class="tab" ng-controller="TabController as tab">
+        <ul class="nav nav-pills">
+            <li ng-class="{ active: tab.isSet(1)}">
+                <a href ng-click="tab.setTab(1)">Description</a></li>
+            <li ng-class="{ active: tab.isSet(2)}">
+                <a href ng-click="tab.setTab(2)">Specs</a></li>
+            <li ng-class="{ active: tab.isSet(3)}">
+                <a href ng-click="tab.setTab(3)">Reviews</a></li>
+        </ul>
+        <div ng-show="tab.isSet(1)">
+            <h4>Description</h4>
+            <blockquote>{{product.description}}</blockquote>
+        </div>
+        <div ng-show="tab.isSet(2)">
+            <h4>Specs</h4>
+            <blockquote>Shine: {{product.shine}}</blockquote>
+        </div>
+        <div ng-show="tab.isSet(3)">
+            <h4>Reviews</h4>
+            <blockquote></blockquote>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
