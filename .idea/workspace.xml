@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05fcbe50-8d90-4606-863f-b5c063128332" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularjs/myApp/js/app.js" afterPath="$PROJECT_DIR$/angularjs/myApp/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularjs/myApp/index.html" afterPath="$PROJECT_DIR$/angularjs/myApp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angularjs/myApp/img/gem-01.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angularjs/myApp/img/gem-02.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angularjs/myApp/img/gem-03.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angularjs/myApp/img/gem-04.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angularjs/myApp/img/gem-05.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angularjs/myApp/img/gem-06.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angularjs/myApp/img/gem-07.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angularjs/myApp/img/gem-09.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JS2.iws" />
@@ -42,7 +48,7 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angularjs/myApp/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.35327634" vertical-offset="1823" max-vertical-offset="2875">
+            <state vertical-scroll-proportion="-0.2820513" vertical-offset="1773" max-vertical-offset="2875">
               <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
               <folding />
             </state>
@@ -534,7 +540,7 @@
       <workItem from="1436317315600" duration="2617000" />
       <workItem from="1436857349870" duration="1366000" />
       <workItem from="1436920481472" duration="5718000" />
-      <workItem from="1437004707794" duration="2670000" />
+      <workItem from="1437004707794" duration="2757000" />
     </task>
     <task id="LOCAL-00001" summary="removed commented code">
       <created>1434834094751</created>
@@ -632,11 +638,17 @@
       <option name="project" value="LOCAL" />
       <updated>1437064600370</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added images to app">
+      <created>1437065992871</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1437065992871</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79039000" />
+    <option name="totallyTimeSpent" value="79126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -701,7 +713,8 @@
     <MESSAGE value="Angular demo. jQuery demo" />
     <MESSAGE value="ignore cached directory" />
     <MESSAGE value="angularjs demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="angularjs demo" />
+    <MESSAGE value="Added images to app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added images to app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -712,20 +725,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day1/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day1/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="50" max-vertical-offset="200">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day1/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="600">
@@ -1078,9 +1077,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/angularjs/myApp/img/gem-01.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularjs/myApp/img/gem-03.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/angularjs/myApp/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.35327634" vertical-offset="1823" max-vertical-offset="2875">
+        <state vertical-scroll-proportion="-0.2820513" vertical-offset="1773" max-vertical-offset="2875">
           <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
           <folding />
         </state>
