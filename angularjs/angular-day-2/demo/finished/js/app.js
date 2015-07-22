@@ -40,7 +40,18 @@
                 "img/gem-02.gif",
                 "img/gem-05.gif",
                 "img/gem-09.gif"
-            ]
+            ],
+            reviews: [{
+                stars: 5,
+                body: "I love this gem!",
+                author: "joe@example.org",
+                createdOn: 1397490980837
+            }, {
+                stars: 1,
+                body: "This gem sucks.",
+                author: "tim@example.org",
+                createdOn: 1397490980837
+            }]
         },
         {
             name: 'Bloodstone',
@@ -51,7 +62,18 @@
                 "img/gem-01.gif",
                 "img/gem-03.gif",
                 "img/gem-04.gif"
-            ]
+            ],
+            reviews: [{
+                stars: 5,
+                body: "I love this gem!",
+                author: "joe@example.org",
+                createdOn: 1397490980837
+            }, {
+                stars: 1,
+                body: "This gem sucks.",
+                author: "tim@example.org",
+                createdOn: 1397490980837
+            }]
         },
         {
             name: 'Zircon',
@@ -62,7 +84,18 @@
                 "img/gem-06.gif",
                 "img/gem-07.gif",
                 "img/gem-09.gif"
-            ]
+            ],
+            reviews: [{
+                stars: 5,
+                body: "I love this gem!",
+                author: "joe@example.org",
+                createdOn: 1397490980837
+            }, {
+                stars: 1,
+                body: "This gem sucks.",
+                author: "tim@example.org",
+                createdOn: 1397490980837
+            }]
         }
     ];
 })();

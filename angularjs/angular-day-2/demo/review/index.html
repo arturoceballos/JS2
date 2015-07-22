@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="gemStore">
+<html ng-app="store">
 <head>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -11,62 +11,64 @@
 <!--step 1: Create store module in your app.js-->
 
 <!--step 2: Create StoreController and pull it into your html using a directive-->
-<body class="list-group">
+<body class="list-group" ng-controller="StoreController as storeCtrl">
 <header>
     <h1 class="text-center">Gem Store</h1>
     <h2 class="text-center">Using Angular</h2>
 </header>
 
 <!--step 3: Loop over our products (the gems)-->
-<div class="list-group-item">
+<div class="list-group-item" ng-repeat="gems in storeCtrl.products">
     <h3>
         <!--step 4: Use an expression to insert the product name-->
-
+        {{gems.name}}
         <!--step 5: Use an expression to insert the product price-->
         <!--Bonus: Use pipe filter to convert our price into a currency format-->
-        <em class="pull-right"></em>
+        <em class="pull-right">{{gems.price | currency}}</em>
     </h3>
-    <section ng-show="product.images.length" ng-controller="GalleryController as gallery">
-        <img ng-src="{{product.images[gallery.current]}}" />
-        <ul class="list-inline thumbs">
-            <li class="thumbnail" ng-repeat="image in product.images">
-                <img ng-src="{{image}}" />
-            </li>
-        </ul>
-    </section>
+    <!--<section ng-show="gems.images.length" ng-controller="GalleryController as gallery">-->
+        <!--<img ng-src="{{gems.images[gallery.current]}}" />-->
+        <!--<ul class="list-inline thumbs">-->
+            <!--<li class="thumbnail" ng-repeat="image in gems.images">-->
+                <!--<img ng-src="{{image}}" style="width: 50px; height: 50px;"/>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</section>-->
 
 <!--Step 6: Create TabController and pull into html using directive-->
-    <section class="tab">
+    <section class="tab" ng-controller="TabController as tabCtrl">
         <ul class="nav nav-pills">
             <!--Step 10: Use directive that'll set the list item's class to active and then use an expression that'll access the-->
             <!--isSet method in your TabController to set the tab to it's current value. Do this for each li-->
-            <li>
+            <li ng-class="{active: tabCtrl.isSet(1)}">
                 <!--Step 7: Use a directive that'll set the tab to it's current state (tab you clicked on) by accessing the -->
                 <!--setTab method you created in your TabController. Do this for each link-->
-                <a href>Description</a></li>
-            <li>
-                <a href>Specs</a></li>
-            <li>
-                <a href>Reviews</a></li>
+                <a href ng-click="tabCtrl.setTab(1)">Description</a></li>
+            <li ng-class="{active: tabCtrl.isSet(2)}">
+                <a href ng-click="tabCtrl.setTab(2)">Specs</a></li>
+            <li ng-class="{active: tabCtrl.isSet(3)}">
+                <a href ng-click="tabCtrl.setTab(3)">Reviews</a></li>
         </ul>
         <!--Step 9: Use a directive that'll show the div which directly relates to the tab you selected. This will be-->
         <!--similar to the way you set the active tab to active-->
-        <div>
+        <div ng-show="tabCtrl.isSet(1)">
             <h4>Description</h4>
             <!--Step 8: Use an expression to get the products description and put it in the Description div. Do the same-->
             <!--for each div that follows-->
-            <blockquote></blockquote>
+            <blockquote>{{gems.description}}</blockquote>
         </div>
-        <div ng-show="tab.isSet(2)">
-            <h4>Specs</h4>
-            <blockquote></blockquote>
+        <div ng-show="tabCtrl.isSet(2)">
+            <h4>Shine</h4>
+            <blockquote>{{gems.shine}}</blockquote>
         </div>
-        <div ng-show="tab.isSet(3)">
+        <div ng-show="tabCtrl.isSet(3)">
             <h4>Reviews</h4>
             <blockquote></blockquote>
         </div>
     </section>
 </div>
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

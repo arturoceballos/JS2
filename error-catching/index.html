@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Please input a number between 4 and 9:</p>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="output"></p>
+
+<script>
+    function MyError(message) {
+        this.name = 'MyError';
+        this.message = message || 'Default Message';
+    }
+    MyError.prototype = Object.create(Error.prototype);
+    MyError.prototype.constructor = MyError;
+
+    try {
+        throw new MyError();
+    } catch (e) {
+        console.log(e.name);     // 'MyError'
+        console.log(e.message);  // 'Default Message'
+    }
+
+    try {
+        throw new MyError('different message');
+    } catch (e) {
+        console.log(e.name);     // 'MyError'
+        console.log(e.message);  // 'different message'
+    }
+</script>
+
+</body>
+</html>
